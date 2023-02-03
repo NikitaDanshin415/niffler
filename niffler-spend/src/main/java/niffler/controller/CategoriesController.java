@@ -23,11 +23,13 @@ public class CategoriesController {
 
     @GetMapping("/categories")
     public List<CategoryJson> getCategories(@RequestParam String username) {
+        String test = "qwe";
         return categoryService.getAllCategories(username);
     }
 
     @PostMapping("/category")
     public CategoryJson addCategory(@RequestBody CategoryJson category) {
+        String test = "qwe";
         return categoryService.addCategory(category);
     }
 }
